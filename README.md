@@ -17,4 +17,15 @@
 
 * Next, let's run `git pull origin mergeConflicts` &mdash; this will pull our `mergeConflicts` branch into our `master` branch.
 
-* The previous step should output
+* The previous step should output:
+[fullCLIConflict](images/fullCLIConflict.png)
+
+* We will then go into the file containing the conflict, `conflict.json`. Inside the file we should see something similar to the following:
+[conflict.png](images/conflict.png)
+
+* We can either take the `Incoming Change` or keep our `Current Change`. These changes are dilenated by a series of equal signs.
+
+* Now when we go to fix our conflict, our CLI path will look something like this:
+[cliConflict](cliConflict.png)
+
+* To remedy this, lets choose which changes we want, then `git add`, `git commit -m`, and finally `git push origin master`!
